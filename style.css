@@ -1,0 +1,53 @@
+div{
+height:400px;
+width:80%;
+margin:auto;
+position:relative
+}
+img{
+width:100%;
+position:absolute;
+left:0;
+right:0;
+bottom:0;
+top:0;
+height:400px
+}
+img{z-index:-1;
+animation:fade 15s infinite ;
+animation-direction:forwards;}
+
+img:nth-child(1){
+animation-delay:10s;
+}
+
+
+img:nth-child(2){
+
+animation-delay:5s;
+}
+
+
+@keyframes fade{
+
+0%{z-index:100;
+opacity:1;
+
+}25%{z-index:100;
+opacity:1;
+
+}
+33.33%{
+ opacity:0;
+ z-index:-1;
+}
+
+98%{
+ opacity:0;
+ z-index:-1;
+}100%{
+ opacity:1;
+ z-index:100;
+}
+ 
+}
